@@ -68,7 +68,7 @@ function layerFactory(L) {
 
         addLayer: function (layer) {
 
-            if ((layer.options.pane == 'markerPane' || layer.options.pange == 'tilePane') && layer.options.icon) this.addMarker(layer);
+            if ((layer.options.pane == 'markerPane') && layer.options.icon) this.addMarker(layer);
             else console.error('Layer isn\'t a marker');
         },
 
